@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
+import 'font-awesome/css/font-awesome.min.css';
 import './Business.css';
+import {ReactComponent as Review} from './rate_review.svg';
 
 class Business extends React.Component {
 
@@ -22,8 +24,8 @@ class Business extends React.Component {
 
             <div className="Business-reviews">
               <h3>{this.props.business.category}</h3>
-              <h3 className="rating">{this.props.business.rating}</h3>
-              <p>{this.props.business.reviewCount} reviews</p>
+              <h3 className="rating">{this.props.business.rating}<i class="fa fa-star" aria-hidden="true"></i></h3>
+              <p>{this.props.business.reviewCount}<Review></Review></p>
             </div>
 
           </div>
