@@ -4,6 +4,7 @@ import './App.css';
 import BusinessList from '../BusinessList/BusinessList'
 import SearchBar from '../SearchBar/SearchBar'
 import Yelp from '../../util/Yelp'
+import Footer from '../Partials/Footer'
 
 
 class App extends React.Component {
@@ -30,6 +31,7 @@ class App extends React.Component {
         <h1>Ravenous</h1>
         <SearchBar searchYelp={this.searchYelp}/>
         <BusinessList businesses={this.state.businesses}/>
+        <Footer/>
       </div>
     )
   }

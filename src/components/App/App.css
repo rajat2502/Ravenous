@@ -42,3 +42,14 @@ h1 {
   font-size: 1.8rem;
   color: #fff;
 }
+
+.footer {
+  padding: 50px;
+  text-align: center;
+  background-color: #cca353;
+}
+
+.logo {
+  height: 23px;
+  width: 25px;
+}
