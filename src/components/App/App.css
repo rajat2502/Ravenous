@@ -42,3 +42,16 @@ h1 {
   font-size: 1.8rem;
   color: #fff;
 }
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #cca353;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.logo {
+  height: 21px;
+  width: 23px;
+}
