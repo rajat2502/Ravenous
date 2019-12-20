@@ -1,5 +1,6 @@
 import React from 'react'
 import './SearchBar.css'
+import geolocator from 'geolocator'
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -45,7 +46,20 @@ class SearchBar extends React.Component {
   }
 
   componentDidMount(){
-    this.props.searchYelp('food','usa','best_match')
+    var currlocation
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumWait: 10000,     // max wait time for desired accuracy
+      maximumAge: 0,          // disable cache
+      desiredAccuracy: 30,    // meters
+      fallbackToIP: true,     // fallback to IP if Geolocation fails or rejected
+    };
+    geolocator.locateByIP(options, function (err, location) {
+      console.log(location.address.city);
+      currlocation=location.address.city
+    });
+    this.props.searchYelp('food',currlocation,'best_match')
   }
   
   handleSearch(event) {
