@@ -10,7 +10,7 @@
 }
 .Business:hover{
   transition: all 200ms ease-in;
-  transform: scale(1.100);
+  transform: scale(1.05);
 }
 .Business .image-container {
   object-fit: contain;
