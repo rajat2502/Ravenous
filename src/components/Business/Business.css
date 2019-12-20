@@ -3,16 +3,26 @@
   flex-direction: column;
   justify-content: space-between;
   width: 16.66rem;
+  height: 20rem;
   margin: 0 .5rem 2.3rem .5rem;
+  box-shadow:5px 5px 45px -14px black;
+  border-radius: 10px;
 }
-
+.Business:hover{
+  transition: all 200ms ease-in;
+  transform: scale(1.05);
+}
 .Business .image-container {
-  height: 16.66rem;
+  object-fit: contain;
+  height: 12.66rem;
   margin-bottom: 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .Business h2 {
   margin-bottom: .5rem;
+  margin-left: .7rem;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -20,6 +30,8 @@
 .Business-information {
   display: flex;
   justify-content: space-between;
+  margin-left: .7rem;
+  margin-bottom: .3rem;
 }
 
 .Business-information p {
@@ -39,11 +51,14 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
+  margin-right: .7rem;
+
 }
 
 .Business-reviews h3 {
   color: #CCA353;
   font-weight: 600;
+
 }
 
 .Business-reviews .rating {
