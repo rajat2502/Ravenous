@@ -44,11 +44,13 @@ h1 {
 }
 
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #cca353;
   color: #ffffff;
   font-size: 25px;
+  height: 35px;
+  
 }
 
 .logo {
