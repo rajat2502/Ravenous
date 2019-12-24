@@ -8,6 +8,7 @@
     "font-awesome": "^4.7.0",
     "geolocator": "^2.1.5",
     "mdbreact": "^4.23.1",
+    "random-country-name": "^1.0.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.1.2",

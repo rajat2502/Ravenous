@@ -1,6 +1,7 @@
 import React from 'react'
 import './SearchBar.css'
 import geolocator from 'geolocator'
+import Background from './Background';
 
 class SearchBar extends React.Component {
   constructor(props) {

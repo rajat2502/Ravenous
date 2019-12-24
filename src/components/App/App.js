@@ -5,6 +5,7 @@ import BusinessList from '../BusinessList/BusinessList'
 import SearchBar from '../SearchBar/SearchBar'
 import Yelp from '../../util/Yelp'
 import Footer from '../Partials/Footer'
+import Background from '../SearchBar/Background';
 
 
 class App extends React.Component {
@@ -29,7 +30,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Ravenous</h1>
-        <SearchBar searchYelp={this.searchYelp}/>
+        <Background>
+          <SearchBar searchYelp={this.searchYelp}/>
+        </Background>
         <BusinessList businesses={this.state.businesses}/>
         <Footer/>
       </div>
