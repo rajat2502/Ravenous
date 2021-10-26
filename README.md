@@ -1,9 +1,11 @@
 # Ravenous
-A simple website built using React-js that uses Yelp.com's API to get the Restaurants around you
+A simple website built using React-js that uses Yelp.com's API to get the Restaurants around you.
+
 ### Technologies Used :
   * React-JS
   * Yelp's API
   * Netlify.com (for hosting)
+
 ### How to Run Locally :
 1. Clone the Repository
 
